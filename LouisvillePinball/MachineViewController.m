@@ -2,7 +2,7 @@
 //  MachineViewController.m
 //  LouisvillePinball
 //
-//  Created by Jeffrey Jackson on 4/28/11.
+//  Created by Jeffrey Jackson on 5/10/11.
 //  Copyright 2011 AutoLean, Inc. All rights reserved.
 //
 
@@ -10,76 +10,48 @@
 
 
 @implementation MachineViewController
-@synthesize adView;
-@synthesize bannerIsVisible;
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [super viewDidLoad];
-    static NSString * const kADBannerViewClass = @"ADBannerView";
-	if (NSClassFromString(kADBannerViewClass) != nil) {
-		if (self.adView == nil) {
-			self.adView = [[[ADBannerView alloc] init] autorelease];
-			self.adView.delegate = self;
-			self.adView.frame = CGRectMake(0, 460, 320, 50);
-			self.adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
-			[self.view addSubview:self.adView];
-		}
-	}
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
 }
 
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (void)dealloc
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    [super dealloc];
 }
-
 
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Release any cached data, images, etc. that aren't in use.
+    // Release any cached data, images, etc that aren't in use.
 }
 
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+}
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	if (!self.bannerIsVisible) {
-		[UIView beginAnimations:nil context:NULL];
-		banner.frame = CGRectOffset(banner.frame, 0, -100);
-		[UIView commitAnimations];
-		self.bannerIsVisible = YES;
-	}
-}
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-{
-	if (self.bannerIsVisible) {
-		[UIView beginAnimations:nil context:NULL];
-		banner.frame = CGRectOffset(banner.frame, 0, 100);
-		[UIView commitAnimations];
-		self.bannerIsVisible = NO;
-	}
-}
-
-
-- (void)dealloc
-{
-    self.adView.delegate = nil;
-	self.adView = nil;
-    [super dealloc];
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
