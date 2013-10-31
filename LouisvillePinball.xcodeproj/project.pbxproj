@@ -15,22 +15,36 @@
 		EE16810C136A5EA4005EFBC7 /* LouisvillePinballAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16810B136A5EA4005EFBC7 /* LouisvillePinballAppDelegate.m */; };
 		EE16810F136A5EA4005EFBC7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE16810D136A5EA4005EFBC7 /* MainWindow.xib */; };
 		EE168112136A5EA4005EFBC7 /* LouisvilleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE168111136A5EA4005EFBC7 /* LouisvilleMapViewController.m */; };
-		EE168115136A5EA4005EFBC7 /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE168114136A5EA4005EFBC7 /* MachineViewController.m */; };
 		EE168118136A5EA4005EFBC7 /* LouisvilleMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE168116136A5EA4005EFBC7 /* LouisvilleMapView.xib */; };
-		EE16811B136A5EA4005EFBC7 /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE168119136A5EA4005EFBC7 /* MachineView.xib */; };
 		EE168122136A5EDA005EFBC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE168121136A5EDA005EFBC7 /* MapKit.framework */; };
+		EE265A2D1378EFF6005BF77A /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE265A2B1378EFF6005BF77A /* MachineViewController.m */; };
+		EE265A2E1378EFF6005BF77A /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE265A2C1378EFF6005BF77A /* MachineView.xib */; };
 		EE2B87551375A7A80063D095 /* MachineAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2B87541375A7A80063D095 /* MachineAnnotation.m */; };
 		EE2B87A01377837A0063D095 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B879F1377837A0063D095 /* iAd.framework */; };
-		EE2B87A4137786E60063D095 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2B87A2137786E50063D095 /* CommentViewController.m */; };
-		EE2B87A5137786E60063D095 /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2B87A3137786E60063D095 /* CommentView.xib */; };
+		EE2CC809139BCAF700163CD7 /* louisvillepinball_ios.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2CC808139BCAF700163CD7 /* louisvillepinball_ios.png */; };
 		EE674E5813735982000FA635 /* appicon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = EE674E5713735982000FA635 /* appicon_retina.png */; };
 		EE674E5B13735994000FA635 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE674E5A13735994000FA635 /* appicon.png */; };
 		EE674E5D13735B12000FA635 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE674E5C13735B12000FA635 /* Default@2x.png */; };
 		EE674E5F13735B17000FA635 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EE674E5E13735B17000FA635 /* Default.png */; };
+		EE8AEE6F13B94B2D0026D1F5 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8AEE6E13B94B2D0026D1F5 /* Comment.m */; };
+		EE8AEE7A13B9638E0026D1F5 /* CommentTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8AEE7913B9638E0026D1F5 /* CommentTableCellViewController.m */; };
+		EE8AEE7E13B9651B0026D1F5 /* CommentTableCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8AEE7D13B9651B0026D1F5 /* CommentTableCellViewController.xib */; };
+		EEF97E7713B8B191008CD09E /* 72-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E7513B8B191008CD09E /* 72-pin.png */; };
+		EEF97E7813B8B191008CD09E /* 72-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E7613B8B191008CD09E /* 72-pin@2x.png */; };
+		EEF97E7C13B8B1FA008CD09E /* 08-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E7A13B8B1FA008CD09E /* 08-chat.png */; };
+		EEF97E7D13B8B1FA008CD09E /* 08-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E7B13B8B1FA008CD09E /* 08-chat@2x.png */; };
+		EEF97E8013B8B2F4008CD09E /* 73-radar.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E7E13B8B2F4008CD09E /* 73-radar.png */; };
+		EEF97E8113B8B2F4008CD09E /* 73-radar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E7F13B8B2F4008CD09E /* 73-radar@2x.png */; };
+		EEF97E8413B8B3DF008CD09E /* CommentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF97E8313B8B3DF008CD09E /* CommentsTableViewController.m */; };
+		EEF97E9C13B8C68D008CD09E /* MachineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF97E9A13B8C68D008CD09E /* MachineTableViewController.m */; };
+		EEF97E9D13B8C68D008CD09E /* MachineTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF97E9B13B8C68D008CD09E /* MachineTableViewController.xib */; };
+		EEF97EA413B8CCBB008CD09E /* PinballComments.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF97EA313B8CCBA008CD09E /* PinballComments.m */; };
+		EEF97EA713B8D5FB008CD09E /* MachineCommentTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF97EA613B8D5FA008CD09E /* MachineCommentTableCellViewController.m */; };
+		EEF97EA913B8D60D008CD09E /* MachineCommentTableCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF97EA813B8D60D008CD09E /* MachineCommentTableCellViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE1680F7136A5EA4005EFBC7 /* LouisvillePinball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LouisvillePinball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1680F7136A5EA4005EFBC7 /* Ville Pins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ville Pins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1680FB136A5EA4005EFBC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EE1680FD136A5EA4005EFBC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE1680FF136A5EA4005EFBC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,21 +57,40 @@
 		EE16810E136A5EA4005EFBC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		EE168110136A5EA4005EFBC7 /* LouisvilleMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LouisvilleMapViewController.h; sourceTree = "<group>"; };
 		EE168111136A5EA4005EFBC7 /* LouisvilleMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LouisvilleMapViewController.m; sourceTree = "<group>"; };
-		EE168113136A5EA4005EFBC7 /* MachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
-		EE168114136A5EA4005EFBC7 /* MachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
 		EE168117136A5EA4005EFBC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LouisvilleMapView.xib; sourceTree = "<group>"; };
-		EE16811A136A5EA4005EFBC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MachineView.xib; sourceTree = "<group>"; };
 		EE168121136A5EDA005EFBC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
+		EE265A2A1378EFF6005BF77A /* MachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineViewController.h; sourceTree = "<group>"; };
+		EE265A2B1378EFF6005BF77A /* MachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineViewController.m; sourceTree = "<group>"; };
+		EE265A2C1378EFF6005BF77A /* MachineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineView.xib; sourceTree = "<group>"; };
 		EE2B87531375A7A80063D095 /* MachineAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineAnnotation.h; sourceTree = "<group>"; };
 		EE2B87541375A7A80063D095 /* MachineAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineAnnotation.m; sourceTree = "<group>"; };
 		EE2B879F1377837A0063D095 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iAd.framework; sourceTree = "<group>"; };
-		EE2B87A1137786E50063D095 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
-		EE2B87A2137786E50063D095 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
-		EE2B87A3137786E60063D095 /* CommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
+		EE2CC808139BCAF700163CD7 /* louisvillepinball_ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = louisvillepinball_ios.png; sourceTree = "<group>"; };
 		EE674E5713735982000FA635 /* appicon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_retina.png; sourceTree = "<group>"; };
 		EE674E5A13735994000FA635 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		EE674E5C13735B12000FA635 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EE674E5E13735B17000FA635 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EE8AEE6D13B94B2D0026D1F5 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		EE8AEE6E13B94B2D0026D1F5 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		EE8AEE7813B9638E0026D1F5 /* CommentTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableCellViewController.h; sourceTree = "<group>"; };
+		EE8AEE7913B9638E0026D1F5 /* CommentTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableCellViewController.m; sourceTree = "<group>"; };
+		EE8AEE7D13B9651B0026D1F5 /* CommentTableCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableCellViewController.xib; sourceTree = "<group>"; };
+		EEF97E7513B8B191008CD09E /* 72-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "72-pin.png"; sourceTree = "<group>"; };
+		EEF97E7613B8B191008CD09E /* 72-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "72-pin@2x.png"; sourceTree = "<group>"; };
+		EEF97E7A13B8B1FA008CD09E /* 08-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08-chat.png"; sourceTree = "<group>"; };
+		EEF97E7B13B8B1FA008CD09E /* 08-chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08-chat@2x.png"; sourceTree = "<group>"; };
+		EEF97E7E13B8B2F4008CD09E /* 73-radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "73-radar.png"; sourceTree = "<group>"; };
+		EEF97E7F13B8B2F4008CD09E /* 73-radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "73-radar@2x.png"; sourceTree = "<group>"; };
+		EEF97E8213B8B3DF008CD09E /* CommentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsTableViewController.h; sourceTree = "<group>"; };
+		EEF97E8313B8B3DF008CD09E /* CommentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsTableViewController.m; sourceTree = "<group>"; };
+		EEF97E9913B8C68D008CD09E /* MachineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineTableViewController.h; sourceTree = "<group>"; };
+		EEF97E9A13B8C68D008CD09E /* MachineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineTableViewController.m; sourceTree = "<group>"; };
+		EEF97E9B13B8C68D008CD09E /* MachineTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineTableViewController.xib; sourceTree = "<group>"; };
+		EEF97EA213B8CCBA008CD09E /* PinballComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinballComments.h; sourceTree = "<group>"; };
+		EEF97EA313B8CCBA008CD09E /* PinballComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinballComments.m; sourceTree = "<group>"; };
+		EEF97EA513B8D5FA008CD09E /* MachineCommentTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineCommentTableCellViewController.h; sourceTree = "<group>"; };
+		EEF97EA613B8D5FA008CD09E /* MachineCommentTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineCommentTableCellViewController.m; sourceTree = "<group>"; };
+		EEF97EA813B8D60D008CD09E /* MachineCommentTableCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineCommentTableCellViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +115,14 @@
 				EE674E5E13735B17000FA635 /* Default.png */,
 				EE674E5C13735B12000FA635 /* Default@2x.png */,
 				EE674E5A13735994000FA635 /* appicon.png */,
+				EE2CC808139BCAF700163CD7 /* louisvillepinball_ios.png */,
 				EE674E5713735982000FA635 /* appicon_retina.png */,
+				EEF97E7513B8B191008CD09E /* 72-pin.png */,
+				EEF97E7613B8B191008CD09E /* 72-pin@2x.png */,
+				EEF97E7A13B8B1FA008CD09E /* 08-chat.png */,
+				EEF97E7B13B8B1FA008CD09E /* 08-chat@2x.png */,
+				EEF97E7E13B8B2F4008CD09E /* 73-radar.png */,
+				EEF97E7F13B8B2F4008CD09E /* 73-radar@2x.png */,
 				EE168101136A5EA4005EFBC7 /* LouisvillePinball */,
 				EE1680FA136A5EA4005EFBC7 /* Frameworks */,
 				EE1680F8136A5EA4005EFBC7 /* Products */,
@@ -92,7 +132,7 @@
 		EE1680F8136A5EA4005EFBC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE1680F7136A5EA4005EFBC7 /* LouisvillePinball.app */,
+				EE1680F7136A5EA4005EFBC7 /* Ville Pins.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,14 +158,26 @@
 				EE168116136A5EA4005EFBC7 /* LouisvilleMapView.xib */,
 				EE168110136A5EA4005EFBC7 /* LouisvilleMapViewController.h */,
 				EE168111136A5EA4005EFBC7 /* LouisvilleMapViewController.m */,
-				EE2B87A3137786E60063D095 /* CommentView.xib */,
-				EE2B87A1137786E50063D095 /* CommentViewController.h */,
-				EE2B87A2137786E50063D095 /* CommentViewController.m */,
-				EE168119136A5EA4005EFBC7 /* MachineView.xib */,
-				EE168113136A5EA4005EFBC7 /* MachineViewController.h */,
-				EE168114136A5EA4005EFBC7 /* MachineViewController.m */,
+				EE265A2C1378EFF6005BF77A /* MachineView.xib */,
+				EE265A2A1378EFF6005BF77A /* MachineViewController.h */,
+				EE265A2B1378EFF6005BF77A /* MachineViewController.m */,
+				EEF97EA213B8CCBA008CD09E /* PinballComments.h */,
+				EEF97EA313B8CCBA008CD09E /* PinballComments.m */,
+				EE8AEE6D13B94B2D0026D1F5 /* Comment.h */,
+				EE8AEE6E13B94B2D0026D1F5 /* Comment.m */,
 				EE2B87531375A7A80063D095 /* MachineAnnotation.h */,
 				EE2B87541375A7A80063D095 /* MachineAnnotation.m */,
+				EEF97E9913B8C68D008CD09E /* MachineTableViewController.h */,
+				EEF97E9A13B8C68D008CD09E /* MachineTableViewController.m */,
+				EEF97E9B13B8C68D008CD09E /* MachineTableViewController.xib */,
+				EEF97EA513B8D5FA008CD09E /* MachineCommentTableCellViewController.h */,
+				EEF97EA613B8D5FA008CD09E /* MachineCommentTableCellViewController.m */,
+				EEF97EA813B8D60D008CD09E /* MachineCommentTableCellViewController.xib */,
+				EEF97E8213B8B3DF008CD09E /* CommentsTableViewController.h */,
+				EEF97E8313B8B3DF008CD09E /* CommentsTableViewController.m */,
+				EE8AEE7813B9638E0026D1F5 /* CommentTableCellViewController.h */,
+				EE8AEE7913B9638E0026D1F5 /* CommentTableCellViewController.m */,
+				EE8AEE7D13B9651B0026D1F5 /* CommentTableCellViewController.xib */,
 				EE168102136A5EA4005EFBC7 /* Supporting Files */,
 			);
 			path = LouisvillePinball;
@@ -159,7 +211,7 @@
 			);
 			name = LouisvillePinball;
 			productName = LouisvillePinball;
-			productReference = EE1680F7136A5EA4005EFBC7 /* LouisvillePinball.app */;
+			productReference = EE1680F7136A5EA4005EFBC7 /* Ville Pins.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,6 +220,7 @@
 		EE1680EE136A5EA4005EFBC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "AutoLean, Inc.";
 			};
 			buildConfigurationList = EE1680F1136A5EA4005EFBC7 /* Build configuration list for PBXProject "LouisvillePinball" */;
@@ -195,12 +248,21 @@
 				EE168106136A5EA4005EFBC7 /* InfoPlist.strings in Resources */,
 				EE16810F136A5EA4005EFBC7 /* MainWindow.xib in Resources */,
 				EE168118136A5EA4005EFBC7 /* LouisvilleMapView.xib in Resources */,
-				EE16811B136A5EA4005EFBC7 /* MachineView.xib in Resources */,
 				EE674E5813735982000FA635 /* appicon_retina.png in Resources */,
 				EE674E5B13735994000FA635 /* appicon.png in Resources */,
 				EE674E5D13735B12000FA635 /* Default@2x.png in Resources */,
 				EE674E5F13735B17000FA635 /* Default.png in Resources */,
-				EE2B87A5137786E60063D095 /* CommentView.xib in Resources */,
+				EE265A2E1378EFF6005BF77A /* MachineView.xib in Resources */,
+				EE2CC809139BCAF700163CD7 /* louisvillepinball_ios.png in Resources */,
+				EEF97E7713B8B191008CD09E /* 72-pin.png in Resources */,
+				EEF97E7813B8B191008CD09E /* 72-pin@2x.png in Resources */,
+				EEF97E7C13B8B1FA008CD09E /* 08-chat.png in Resources */,
+				EEF97E7D13B8B1FA008CD09E /* 08-chat@2x.png in Resources */,
+				EEF97E8013B8B2F4008CD09E /* 73-radar.png in Resources */,
+				EEF97E8113B8B2F4008CD09E /* 73-radar@2x.png in Resources */,
+				EEF97E9D13B8C68D008CD09E /* MachineTableViewController.xib in Resources */,
+				EEF97EA913B8D60D008CD09E /* MachineCommentTableCellViewController.xib in Resources */,
+				EE8AEE7E13B9651B0026D1F5 /* CommentTableCellViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,9 +276,14 @@
 				EE168109136A5EA4005EFBC7 /* main.m in Sources */,
 				EE16810C136A5EA4005EFBC7 /* LouisvillePinballAppDelegate.m in Sources */,
 				EE168112136A5EA4005EFBC7 /* LouisvilleMapViewController.m in Sources */,
-				EE168115136A5EA4005EFBC7 /* MachineViewController.m in Sources */,
 				EE2B87551375A7A80063D095 /* MachineAnnotation.m in Sources */,
-				EE2B87A4137786E60063D095 /* CommentViewController.m in Sources */,
+				EE265A2D1378EFF6005BF77A /* MachineViewController.m in Sources */,
+				EEF97E8413B8B3DF008CD09E /* CommentsTableViewController.m in Sources */,
+				EEF97E9C13B8C68D008CD09E /* MachineTableViewController.m in Sources */,
+				EEF97EA413B8CCBB008CD09E /* PinballComments.m in Sources */,
+				EEF97EA713B8D5FB008CD09E /* MachineCommentTableCellViewController.m in Sources */,
+				EE8AEE6F13B94B2D0026D1F5 /* Comment.m in Sources */,
+				EE8AEE7A13B9638E0026D1F5 /* CommentTableCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,14 +314,6 @@
 			name = LouisvilleMapView.xib;
 			sourceTree = "<group>";
 		};
-		EE168119136A5EA4005EFBC7 /* MachineView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE16811A136A5EA4005EFBC7 /* en */,
-			);
-			name = MachineView.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -262,7 +321,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AutoLean, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AutoLean, Inc.";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -271,6 +331,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -279,13 +341,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AutoLean, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AutoLean, Inc.";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -294,6 +359,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AutoLean, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AutoLean, Inc.";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,8 +369,12 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LouisvillePinball/LouisvillePinball-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "LouisvillePinball/LouisvillePinball-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ville Pins";
+				PROVISIONING_PROFILE = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -312,6 +383,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AutoLean, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AutoLean, Inc.";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,8 +392,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LouisvillePinball/LouisvillePinball-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "LouisvillePinball/LouisvillePinball-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ville Pins";
+				PROVISIONING_PROFILE = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "55C7B6BC-15D0-436F-BA2E-CD74971B241A";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

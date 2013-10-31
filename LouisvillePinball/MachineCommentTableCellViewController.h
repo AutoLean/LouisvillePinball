@@ -10,7 +10,13 @@
 
 
 @interface MachineCommentTableCellViewController : UITableViewCell {
-    
+    UILabel *lblMachineName;
+    UILabel *lblMachineLocation;
+    UILabel *lblMachineID;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *lblMachineName;
+@property (nonatomic, retain) IBOutlet UILabel *lblMachineLocation;
+@property (nonatomic, retain) IBOutlet UILabel *lblMachineID;
 
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "LouisvillePinballAppDelegate.h"
+#import "MachineTableViewController.h"
+#import "LouisvilleMapViewController.h"
+#import "MachineViewController.h"
 
 @implementation LouisvillePinballAppDelegate
 
@@ -19,6 +22,31 @@
 {
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
+    LouisvilleMapViewController *mapViewController = [[LouisvilleMapViewController alloc] init];
+    UINavigationController *navMapViewController = [[[UINavigationController alloc] initWithRootViewController:mapViewController] autorelease];
+    [mapViewController view];
+    navMapViewController.tabBarItem.image = [UIImage imageNamed:@"73-radar.png"];
+    navMapViewController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    navMapViewController.title = @"Louisville Pinball";
+    [mapViewController release];
+    
+    MachineTableViewController *machineTableViewController = [[MachineTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navMachineCommentController = [[[UINavigationController alloc] initWithRootViewController:machineTableViewController] autorelease];
+    [machineTableViewController view];
+    navMachineCommentController.tabBarItem.image = [UIImage imageNamed:@"08-chat.png"];
+    navMachineCommentController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    navMachineCommentController.title = @"Comments";
+    [machineTableViewController release];
+    
+    MachineViewController *machineViewController = [[MachineViewController alloc] init];
+    UINavigationController *navMachineViewController = [[[UINavigationController alloc] initWithRootViewController:machineViewController] autorelease];
+    navMachineViewController.tabBarItem.image = [UIImage imageNamed:@"72-pin.png"];
+    navMachineViewController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    navMachineViewController.title = @"Add Machine";
+    [machineViewController release];
+    
+    //Add Navigation Controllers to Tab Bar Controller
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects: navMapViewController, navMachineCommentController, navMachineViewController, nil]];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

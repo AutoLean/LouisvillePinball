@@ -10,7 +10,13 @@
 
 
 @interface CommentTableCellViewController : UITableViewCell {
-    
+    UILabel *lblPlayer;
+    UILabel *lblEntryDate;
+    UILabel *lblComment;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *lblPlayer;
+@property (nonatomic, retain) IBOutlet UILabel *lblEntryDate;
+@property (nonatomic, retain) IBOutlet UILabel *lblComment;
 
 @end

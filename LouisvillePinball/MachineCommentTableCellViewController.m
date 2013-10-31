@@ -8,8 +8,10 @@
 
 #import "MachineCommentTableCellViewController.h"
 
-
 @implementation MachineCommentTableCellViewController
+@synthesize lblMachineName;
+@synthesize lblMachineLocation;
+@synthesize lblMachineID;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

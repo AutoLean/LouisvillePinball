@@ -10,5 +10,9 @@
 
 
 @implementation PinballComments
+@synthesize machineName;
+@synthesize machineID;
+@synthesize machineLocation;
+@synthesize arrayMachineComments;
 
 @end

@@ -10,7 +10,15 @@
 
 
 @interface PinballComments : NSObject {
-    
+    NSString *machineName;
+    NSString *machineLocation;
+    NSString *machineID;
+    NSMutableArray *arrayMachineComments;
 }
+
+@property (nonatomic,copy) NSString *machineName;
+@property (nonatomic,copy) NSString *machineLocation;
+@property (nonatomic,copy) NSString *machineID;
+@property (nonatomic,copy) NSMutableArray *arrayMachineComments;
 
 @end

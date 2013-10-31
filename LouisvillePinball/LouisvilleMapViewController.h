@@ -9,27 +9,34 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "MachineAnnotation.h"
+#import <iAd/iAd.h>
 
-@interface LouisvilleMapViewController : UIViewController <MKMapViewDelegate, NSXMLParserDelegate> {
+@interface LouisvilleMapViewController : UIViewController <MKMapViewDelegate, NSXMLParserDelegate, UIAlertViewDelegate, ADBannerViewDelegate> {
     MKMapView *mapView;
-    UIActivityIndicatorView * activityIndicator;
-    
+
     NSXMLParser *xmlParser;
 	NSMutableArray *machineLocationData;
 	
-	// a temporary item; added to the "LocationData" array one at a time, and cleared for the next one
 	NSMutableDictionary *pinballMachine;
     MachineAnnotation *pinballMachineAnnotation;
-	
-	// it parses through the document, from top to bottom...
-	// we collect and cache each sub-element value, and then save each item to our array.
-	// we use these to track each current item, until it's ready to be added to the "stories" array
+    
 	NSString *currentMachine;
 	NSMutableString *currentMachineName;
     NSMutableString *currentLocation;
     NSMutableString *currentLatitude;
     NSMutableString *currentLongitude;
     
+    ADBannerView *adView;
+	BOOL bannerIsVisible;
 }
+
+- (void)initializePinballMachineMap;
+- (void) machineAdded:(NSNotification *) notification;
+
+@property(nonatomic, retain) ADBannerView *adView;
+@property(nonatomic, assign) BOOL bannerIsVisible;
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner;
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error;
 
 @end

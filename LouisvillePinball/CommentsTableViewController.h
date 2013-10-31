@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Comment.h"
 
 
 @interface CommentsTableViewController : UITableViewController {
-    
+    NSMutableArray *arrayComments;
+    Comment *comment;
 }
 
+@property (nonatomic,retain) NSMutableArray *arrayComments;
+@property (nonatomic,retain) Comment *comment;
 @end

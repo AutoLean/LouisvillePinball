@@ -10,6 +10,9 @@
 
 
 @implementation CommentTableCellViewController
+@synthesize lblPlayer;
+@synthesize lblComment;
+@synthesize lblEntryDate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -7,9 +7,12 @@
 //
 
 #import "CommentsTableViewController.h"
-
+#import "Comment.h"
+#import "CommentTableCellViewController.h"
 
 @implementation CommentsTableViewController
+@synthesize arrayComments;
+@synthesize comment;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -83,30 +86,68 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [arrayComments count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize constraintSize;
+    constraintSize.width = 280.0f;
+    constraintSize.height = MAXFLOAT;
+    //Comment *comment = [[Comment alloc] init];
+    comment = [arrayComments objectAtIndex:indexPath.row];
+    CGSize theSize = [comment.commentText sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
+    if (theSize.height < 44)
+    {
+        return 60;
+    }
+    else
+    {
+        return theSize.height + 30;
+    }
+   // [comment release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CustomCellIdentifier = @"CommentTableCellViewController";
+	CommentTableCellViewController *commentCell = (CommentTableCellViewController *)[tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
+	if (commentCell == nil) 
+    { 
+		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CommentTableCellViewController"
+													 owner:self options:nil];
+		for (id oneObject in nib) if ([oneObject isKindOfClass:[CommentTableCellViewController class]])
+			commentCell = (CommentTableCellViewController *)oneObject;
+	}
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    //Comment *comment = [[Comment alloc] init];
+    comment = [arrayComments objectAtIndex:indexPath.row];
+    commentCell.lblPlayer.text = comment.commentName;
+    commentCell.lblEntryDate.text = comment.commentDate;
+    commentCell.lblComment.text = comment.commentText;
+    commentCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    CGRect labelFrame = commentCell.lblComment.frame;
+    labelFrame.size.width = 280;
+    if (labelFrame.size.height < 44)
+    {
+        labelFrame.size.height = 44;
     }
-    
-    // Configure the cell...
-    
-    return cell;
+    else
+    {
+        labelFrame.size.height = labelFrame.size.height;
+    }
+    commentCell.lblComment.frame = labelFrame;
+    [commentCell.lblComment sizeToFit];
+    //[comment release];
+    return commentCell;
 }
 
 /*

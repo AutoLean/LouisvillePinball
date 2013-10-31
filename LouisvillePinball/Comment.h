@@ -10,7 +10,13 @@
 
 
 @interface Comment : NSObject {
-    
+    NSString *commentName;
+    NSString *commentText;
+    NSString *commentDate;
 }
+
+@property (nonatomic,copy) NSString *commentName;
+@property (nonatomic,copy) NSString *commentText;
+@property (nonatomic,copy) NSString *commentDate;
 
 @end

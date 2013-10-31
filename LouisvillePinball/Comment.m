@@ -10,5 +10,8 @@
 
 
 @implementation Comment
+@synthesize commentName;
+@synthesize commentText;
+@synthesize commentDate;
 
 @end
